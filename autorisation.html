@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+        <section class="header">
+            <div class="container">
+                <div class="row py-1 mb-3">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid">            
+                            <div class="row py-1 mb-3">
+                                <div class="col-md-2">
+                                    <img src="img/logo.png" class="logo">
+                                </div>
+                            </div>  
+                            <button class="navbar-toggler center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Переключатель навигации">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <ul class="navbar-nav me-auto p-4 mb-2 mb-lg-3">                                            
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-white" aria-current="page" href="#">Menu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#">Feature</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#">Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="orange_button nav-link" href="index.html">Back to shop</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <div class="down-header">
+                    <div class="a">
+                        <h3>
+                            LOOK STYLISH BE STYLISH
+                        </h3>
+                        <img class="stylish" src="img/stylish-header.png" alt="">.
+                        <p>
+                            Before starting this business you should have ideas<br> about the market and products to Compete with the<br> Existing Businesses.
+                        </p>
+                    </div>
+                    <div class="c">
+                        <div class="orange_button">
+                            <h2><a class="text-white" href="index.html">Go back</a></h2>
+                        </div>
+                    </div>
+                    <div class="b">
+                        <form id="auth" action="handler.php" class="needs-validation">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mail" required>
+                                <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label text-white">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" name="pass" required>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label text-white" for="exampleCheck1" name="check">Check me out</label>
+                            </div>
+                            <a href="indexloggedin.html" type="submit" class="btn btn-primary">Submit</a>
+                        </form>
+                    </div>
+                    <div class="d">
+                        <img src="img/30-off.png" class="off-30">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+          <!-- Modal -->
+        <div class="cookies" id="cookies">
+            <div class="cookies__descr">
+                Using our site you agree with 
+                <a class="cookies__link" href="https://ru.wikipedia.org/wiki/Cookie">cookies</a>
+                <br>
+                <br>
+            </div>
+            <button type="button" class="cookies__btn" data-bs-dismiss="modal" id="cookies__btn">Sure</button>
+        </div>
+
+        <button type="button" class="sales sales__btn" id="sales" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Sales
+        </button>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog sales__modal" id="sales">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="sales__descr text-black">
+                            Download the 
+                            <a class="sales__link" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D1%80_%D1%82%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2">app</a>
+                             to get sales!
+                            <br>
+                            <br>
+                        </div>
+                        <a href="https://tanki.su/ru/game/download/" target="_blank" type="button" class="sales__btn" data-bs-dismiss="modal" id="sales__btn">Sure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+
+        </script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ -->
+        <script src="js/modal_okno.js"></script>
+<!--         <script src="js/burger-menu.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/slider.js"></script> -->
+        <script src="js/tabs.js"></script>
+        <script src="js/sort.js"></script>
+    </body>
+</html>
